@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>Tomasz Szymański</title>
+ <link href="styles0508.css" rel="stylesheet">
+ <script src='jquery-3.3.1.min.js'></script>
+</head>
+<body>
+  <header>
+       <img id= 'avatar' src= 'img/prof.jpg' alt='avatar'>
+       <span id= 'headerText'>
+            <p>Tomasz Szymański</p>
+            <p>Front-end Developer</p>
+       </span>
+       
+       <div style="clear: both;"></div>
+  </header>
+
+  <div id="navbar">
+    <a id='link1'class='active' href="#OMnie">O Mnie</a>
+    <a id='link2' href="#WorkEdu">Praca i Wykształcenie</a>
+    <a id='link3' href="#Umiejetnosci">Umiejętności</a>
+    <a id='link4' href="#MojProj">Mój Projekt</a>
+    <a id='link5' href="#Snake">Zagraj w Węża</a>
+    <a id='link6' href="#Kontakt">Kontakt</a>
+  </div>
+
+<main>
+  <div id='OMnie'>
+        <h1>O mnie</h1>
+        Jestem absolwentem Politechniki Warszawskiej. Od 11 lat pracuję jako geodeta. Zawód ten nauczył mnie odpowiedzialności, ogromnej systematyczności i pracy zespołowej.
+        Postanowiłem jednak moje hobby - programowanie - zamienić w zawód. Ukończyłem kurs firmy ALX "programista Java Script". Uczę się też samodzielnie z książek, kursów wideo oraz poprzez samodzielne tworzenie stron i programów od podstaw.
+        Ta strona prezentuje próbkę moich możliwości.
+  </div>
+       
+  <div id='WorkEdu'>
+      <h1>Praca i Wykształcenie</h1>
+        <div id="history">
+            <div class="container right">
+              <div class="content">
+                <h2>2008</h2>
+                <p>Polskie Przedsiębiorstwo Geodezyjno - Kartograficzne</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>2010</h2>
+                <p>Geotrop</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>2011</h2>
+                <p>Politechnika Warszawska, wydział Geodezji I Kartografii</p>
+                <p>studia inżynierskie</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>2015</h2>
+                <p>Szkoła Główna Gospodarstwa Wiejskiego, wydział Rolnictwa i Biologii</p>
+                <p>studia podyplomowe</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>2016</h2>
+                <p>Politechnika Warszawska, wydział Geodezji I Kartografii</p>
+                <p>studia magisterskie</p>
+              </div>
+            </div>
+          </div>
+  </div>
+
+  <div id='Umiejetnosci'>
+      <h1 style="text-align:center">Umiejętności</h1>
+
+      <div class="slajdy">
+        <div class="logo">
+          <img src="img/html.jpg">
+        </div>
+      
+        <div class="logo">
+          <img src="img/css.jpg">
+        </div>
+      
+        <div class="logo">
+          <img src="img/sass.jpg">
+        </div>
+          
+        <div class="logo">
+          <img src="img/js.jpg">
+        </div>
+      
+        <div class="logo">
+          <img src="img/jest.jpg" style="padding: 30px;">
+        </div>
+          
+        <div class="logo">
+          <img src="img/jquery.jpg" style="padding: 82px 0;">
+        </div>
+
+        <div class="logo">
+          <img src="img/es6.jpg">
+        </div>
+
+        <div class="logo">
+          <img src="img/ts.jpg">
+        </div>
+          
+        <a class="lew" onclick="plusSlides(-1)">❮</a>
+        <a class="praw" onclick="plusSlides(1)">❯</a>
+      
+        <div id="opis"></div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo kursor" src="img/html.jpg" style="width:100%" onclick="currentSlide(1)" alt="HTML">
+          </div>
+          <div class="column">
+            <img class="demo kursor" src="img/css.jpg" style="width:100%" onclick="currentSlide(2)" alt="CSS 3">
+          </div>
+          <div class="column">
+            <img class="demo kursor" src="img/sass.jpg" style="width:100%; position: relative; top: 15px;" onclick="currentSlide(3)" alt="SASS">
+          </div>
+          <div class="column">
+            <img class="demo kursor" src="img/js.jpg" style="width:100%" onclick="currentSlide(4)" alt="Java Script">
+          </div>
+          <div class="column">
+            <img class="demo kursor" src="img/jest.jpg" style="width:100%" onclick="currentSlide(5)" alt="Jest">
+          </div>    
+          <div class="column">
+            <img class="demo kursor" src="img/jquery.jpg" style="width:100%; position: relative; top: 30px;" onclick="currentSlide(6)" alt="jQuery">
+          </div>
+          <div class="column">
+            <img class="demo kursor" src="img/es6.jpg" style="width:100%" onclick="currentSlide(7)" alt="ECMAScript 6">
+          </div>   
+          <div class="column">
+            <img class="demo kursor" src="img/ts.jpg" style="width:100%" onclick="currentSlide(8)" alt="TypeScript">
+          </div>   
+        </div>
+      </div>
+
+  </div>
+
+  <div id="MojProj">
+    <h1>Mój Projekt</h1>
+    Stworzyłem stronę, która pokazuje, co jeszcze umiem zrobić za pomocą Java Scriptu. Jej mechanizm opiera się o dynamiczne tworzenie elementów HTML. Klikając w ikony ćwiczeń dodajesz kolejne pozycje do listy. Możesz też dowolnie edytować swój zestaw.
+    <br>
+    <a href="https://tszymanski86.github.io/Trening/">
+      <img src="img/proj01mini.jpg" alt="Zaplanój Trening!">
+    </a>
+  </div>
+
+  <div id="Snake">
+    <h1>Snake</h1>
+    <div id= 'divWynik'>wynik: 0</div>
+    <canvas id= 'canvas' width = '960' height = '576'></canvas>
+    
+    <br>
+
+    <div id='SnakeGrid'>
+      <div class='grid-item'></div>
+      <div class='grid-item'>
+        <button id= 'btGraj'>GRAJ!</button>
+      </div>
+      <div class='grid-item'></div>
+      <div class='grid-item'></div>
+      <div class='grid-item'>
+        <button class='btSterSnake' id= 'btUp'>góra</button>
+      </div>
+      <div class='grid-item'></div>
+      <div class='grid-item'>
+          <button class='btSterSnake' id= 'btLeft'>w lewo</button>
+      </div>
+      <div class='grid-item'></div>
+      <div class='grid-item'>
+          <button class='btSterSnake' id= 'btRight'>w prawo</button>
+      </div>
+      <div class='grid-item'></div>
+      <div class='grid-item'>
+          <button class='btSterSnake' id= 'btDown'>dół</button>
+      </div>
+      <div class='grid-item'></div>
+    </div>
+  </div>
+
+  <div id='Kontakt'>
+    <h1>Kontakt</h1>
+      Interesuje Cię współpraca ze mną? Chcesz o coś zapytać? Wyrazić opinię? Zapraszam do kontaktu mailowego: <a href="mailto:tszymanski86@gmail.com">tszymanski86@gmail.com</a>
+  </div>
+</main>
+
+<script src="scripts0508.js"></script>
+
+</body>
+</html>
