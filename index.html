@@ -2,39 +2,48 @@
 <html lang="pl">
 <head>
  <meta charset="utf-8">
+ <meta name="description" content="Tomasz Szymański - Front-end Deweloper" />
+ <meta name="keywords" content="Tomasz Szymański, front-end, java script, portfolio" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">	
  <title>Tomasz Szymański</title>
- <link href="styles0508.css" rel="stylesheet">
+ <link href="styles.css" rel="stylesheet">
  <script src='jquery-3.3.1.min.js'></script>
 </head>
+
 <body>
   <header>
-       <img id= 'avatar' src= 'img/prof.jpg' alt='avatar'>
-       <span id= 'headerText'>
+       <img id='avatar' src= 'img/prof.jpg' alt='avatar'>
+       <div id='headerText'>
             <p>Tomasz Szymański</p>
             <p>Front-end Developer</p>
-       </span>
-       
+       </div>
        <div style="clear: both;"></div>
   </header>
 
   <div id="navbar">
-    <a id='link1'class='active' href="#OMnie">O Mnie</a>
+    <a id='link1' href="#About" class='active'>O Mnie</a>
     <a id='link2' href="#WorkEdu">Praca i Wykształcenie</a>
-    <a id='link3' href="#Umiejetnosci">Umiejętności</a>
-    <a id='link4' href="#MojProj">Mój Projekt</a>
+    <a id='link3' href="#Skills">Umiejętności</a>
+    <a id='link4' href="#MyProj">Mój Projekt</a>
     <a id='link5' href="#Snake">Zagraj w Węża</a>
-    <a id='link6' href="#Kontakt">Kontakt</a>
+    <a id='link6' href="#Contact">Kontakt</a>
+  </div>
+
+  <div id='hamburger'>
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
   </div>
 
 <main>
-  <div id='OMnie'>
+  <section id='About'>
         <h1>O mnie</h1>
         Jestem absolwentem Politechniki Warszawskiej. Od 11 lat pracuję jako geodeta. Zawód ten nauczył mnie odpowiedzialności, ogromnej systematyczności i pracy zespołowej.
         Postanowiłem jednak moje hobby - programowanie - zamienić w zawód. Ukończyłem kurs firmy ALX "programista Java Script". Uczę się też samodzielnie z książek, kursów wideo oraz poprzez samodzielne tworzenie stron i programów od podstaw.
         Ta strona prezentuje próbkę moich możliwości.
-  </div>
+  </section>
        
-  <div id='WorkEdu'>
+  <section id='WorkEdu'>
       <h1>Praca i Wykształcenie</h1>
         <div id="history">
             <div class="container right">
@@ -71,12 +80,12 @@
               </div>
             </div>
           </div>
-  </div>
+  </section>
 
-  <div id='Umiejetnosci'>
+  <section id='Skills'>
       <h1 style="text-align:center">Umiejętności</h1>
 
-      <div class="slajdy">
+      <div class="slider">
         <div class="logo">
           <img src="img/html.jpg">
         </div>
@@ -109,51 +118,51 @@
           <img src="img/ts.jpg">
         </div>
           
-        <a class="lew" onclick="plusSlides(-1)">❮</a>
-        <a class="praw" onclick="plusSlides(1)">❯</a>
+        <a id="goLeft" onclick="Slider.plusSlides(-1)">❮</a>
+        <a id="goRight" onclick="Slider.plusSlides(1)">❯</a>
       
-        <div id="opis"></div>
+        <div id="name"></div>
       
         <div class="row">
           <div class="column">
-            <img class="demo kursor" src="img/html.jpg" style="width:100%" onclick="currentSlide(1)" alt="HTML">
+            <img class="demo" src="img/html.jpg" alt="HTML">
           </div>
           <div class="column">
-            <img class="demo kursor" src="img/css.jpg" style="width:100%" onclick="currentSlide(2)" alt="CSS 3">
+            <img class="demo" src="img/css.jpg" alt="CSS 3">
           </div>
           <div class="column">
-            <img class="demo kursor" src="img/sass.jpg" style="width:100%; position: relative; top: 15px;" onclick="currentSlide(3)" alt="SASS">
+            <img class="demo" src="img/sass.jpg" style="position: relative; top: 15px;" alt="SASS">
           </div>
           <div class="column">
-            <img class="demo kursor" src="img/js.jpg" style="width:100%" onclick="currentSlide(4)" alt="Java Script">
+            <img class="demo" src="img/js.jpg" alt="Java Script">
           </div>
           <div class="column">
-            <img class="demo kursor" src="img/jest.jpg" style="width:100%" onclick="currentSlide(5)" alt="Jest">
+            <img class="demo" src="img/jest.jpg" alt="Jest">
           </div>    
           <div class="column">
-            <img class="demo kursor" src="img/jquery.jpg" style="width:100%; position: relative; top: 30px;" onclick="currentSlide(6)" alt="jQuery">
+            <img class="demo" src="img/jquery.jpg" style="position: relative; top: 30px;" alt="jQuery">
           </div>
           <div class="column">
-            <img class="demo kursor" src="img/es6.jpg" style="width:100%" onclick="currentSlide(7)" alt="ECMAScript 6">
+            <img class="demo" src="img/es6.jpg" alt="ECMAScript 6">
           </div>   
           <div class="column">
-            <img class="demo kursor" src="img/ts.jpg" style="width:100%" onclick="currentSlide(8)" alt="TypeScript">
+            <img class="demo" src="img/ts.jpg" alt="TypeScript">
           </div>   
         </div>
       </div>
 
-  </div>
+  </section>
 
-  <div id="MojProj">
+  <section id="MyProj">
     <h1>Mój Projekt</h1>
     Stworzyłem stronę, która pokazuje, co jeszcze umiem zrobić za pomocą Java Scriptu. Jej mechanizm opiera się o dynamiczne tworzenie elementów HTML. Klikając w ikony ćwiczeń dodajesz kolejne pozycje do listy. Możesz też dowolnie edytować swój zestaw.
     <br>
     <a href="https://tszymanski86.github.io/Trening/">
       <img src="img/proj01mini.jpg" alt="Zaplanój Trening!">
     </a>
-  </div>
+  </section>
 
-  <div id="Snake">
+  <section id="Snake">
     <h1>Snake</h1>
     <div id= 'divWynik'>wynik: 0</div>
     <canvas id= 'canvas' width = '960' height = '576'></canvas>
@@ -184,15 +193,13 @@
       </div>
       <div class='grid-item'></div>
     </div>
-  </div>
+  </section>
 
-  <div id='Kontakt'>
+  <section id='Contact'>
     <h1>Kontakt</h1>
       Interesuje Cię współpraca ze mną? Chcesz o coś zapytać? Wyrazić opinię? Zapraszam do kontaktu mailowego: <a href="mailto:tszymanski86@gmail.com">tszymanski86@gmail.com</a>
-  </div>
+  </section>
 </main>
-
-<script src="scripts0508.js"></script>
-
 </body>
+<script src="scripts.js"></script>
 </html>
