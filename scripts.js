@@ -58,7 +58,7 @@ function hamburgerMenu(){
   });
 
   window.addEventListener('resize', function() {
-    if (this.innerWidth >= 900) {
+    if (this.innerWidth >= 950) {
       Navbar.style.display = 'block';
       Hamburger.classList.remove('showMenu');
     } else {
@@ -319,6 +319,3 @@ function startSnake(){
 }
 
 }
-
-// przewijanie nie działa, nie do tego miejsca co trzeba, ucina nagłówki
-

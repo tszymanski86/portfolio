@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   background-color: rgb(209, 209, 209);
+  max-width: 1200px;
 }
 
 h1 {
@@ -43,7 +44,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-#navbar {
+nav {
   display: block;
   text-align: center;
   position: sticky;
@@ -58,6 +59,7 @@ header {
   color: white;
   padding: 14px 18px;
   margin: 0 -4px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 0.8em;
 }
@@ -72,17 +74,8 @@ header {
   color: white;
 }
 
-@media screen and (max-width: 1200px){
-  #headerText{
-    font-size: 1.2em;
-  }
 
-  #navbar a {
-    display:block;
-  }
-}
-
-@media screen and (max-width: 900px){
+@media screen and (max-width: 950px){
   #navbar {
     display: none;
   }
@@ -119,7 +112,10 @@ header {
   }
 }
 
-
+main {
+  width:90%;
+  margin: auto;
+}
 
 #history {
   z-index: -1;
@@ -265,7 +261,7 @@ header {
   text-align: center;
   font-size: 120%;
   background-color: #222;
-  padding: 24px 16px;
+  padding: 22px 16px;
   color: white;
   position: absolute;
   top:410px;
